@@ -15,11 +15,11 @@ public class BCSV : ILoadSaveFile
     /// <summary>
     /// The Dictionary containing all the fields in this BCSV
     /// </summary>
-    protected Dictionary<uint, Field> Fields { get; set; } = [];
+    public Dictionary<uint, Field> Fields { get; set; } = [];
     /// <summary>
     /// The list of Entries in this BCSV
     /// </summary>
-    protected List<Entry> Entries { get; set; } = [];
+    public List<Entry> Entries { get; set; } = [];
     /// <summary>
     /// The encoding to use while handling text. Should only realistically be Shift-JIS or UTF-8
     /// </summary>
